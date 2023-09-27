@@ -1,0 +1,7 @@
+# Utiliza nginx:alpine como base
+FROM docker.io/nginx:alpine
+
+# Copia el archivo index.html desde el directorio actual al directorio /usr/share/nginx/html/ en el contenedor
+COPY index.html /usr/share/nginx/html/
+
+EXPOSE 80

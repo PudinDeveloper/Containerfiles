@@ -1,0 +1,8 @@
+# Utiliza la última versión de Alpine como base
+FROM alpine:latest
+
+# Define el comando ENTRYPOINT para mostrar el mensaje
+ENTRYPOINT ["/bin/echo", "Hola, usando ENTRYPOINT en forma de ejecutable!"]
+
+# Agrega un comando que se ejecute de forma indefinida para mantener el contenedor en ejecución
+CMD ["tail", "-f", "/dev/null"]

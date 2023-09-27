@@ -1,0 +1,9 @@
+# Utiliza la última versión de Alpine como base
+FROM alpine:latest
+
+# Actualiza el sistema con apk update
+RUN apk update
+
+# Copia el archivo wordpress-6.3.1.tar.gz al directorio /wordpress en el contenedor
+ADD wordpress-6.3.1.tar.gz .
+

@@ -1,0 +1,11 @@
+# Utiliza la última versión de Alpine como base
+FROM alpine:latest
+
+# Define una variable de entorno llamada WELCOME_USER con el valor "Ismael" (o tu nombre)
+ARG WELCOME_USER=Ismael
+
+# Ejecuta un comando para crear un archivo message.txt con el mensaje de bienvenida
+RUN echo "Bienvenido $WELCOME_USER al contenedor" > message.txt
+
+# Define el comando CMD para mostrar el contenido de message.txt
+CMD cat message.txt

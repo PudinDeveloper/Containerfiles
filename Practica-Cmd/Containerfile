@@ -1,0 +1,4 @@
+FROM alpine:latest
+
+# Inicia ejecutable
+CMD apk update && top
